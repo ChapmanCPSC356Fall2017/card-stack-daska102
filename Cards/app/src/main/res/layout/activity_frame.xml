@@ -1,0 +1,58 @@
+
+<RelativeLayout
+xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:padding="10dp"
+    tools:context="com.example.emilydaskas.cards.FrameActivity"
+    android:onClick="onCardClick"
+    >
+
+<ImageView
+    android:id="@+id/iv_main"
+    android:layout_width="200dp"
+    android:layout_height="200dp"
+    android:src="@drawable/heart"
+    android:layout_centerHorizontal="true"
+    android:layout_centerVertical="true"/>
+<ImageView
+    android:id="@+id/iv_upper"
+    android:layout_width="50dp"
+    android:layout_height="60dp"
+    android:src="@drawable/heart"
+    android:layout_below="@+id/tv_upper"/>
+<ImageView
+    android:id="@+id/iv_lower"
+    android:layout_width="50dp"
+    android:layout_height="60dp"
+    android:src="@drawable/heart"
+    android:layout_above="@+id/tv_lower"
+    android:layout_alignParentRight="true"
+    android:rotation="180"/>
+<TextView
+    android:id="@+id/tv_upper"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:textSize="70sp"
+    android:hint="A"
+    android:layout_alignParentTop="true"
+    android:layout_alignParentLeft="true"
+    android:textColor="#FF0000"
+    android:textColorHint="#FF0000"
+
+    />
+<TextView
+    android:id="@+id/tv_lower"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:textSize="70sp"
+    android:hint="A"
+    android:textColorHint="#FF0000"
+    android:layout_alignParentBottom="true"
+    android:layout_alignParentRight="true"
+    android:rotation="180"
+    android:textColor="#FF0000"
+    />
+
+</RelativeLayout>
